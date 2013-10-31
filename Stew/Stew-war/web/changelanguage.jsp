@@ -21,7 +21,7 @@
                     data: "language="+languageID,
                     dataType: "json",
                     success: function(data){
-//                        alert('ok');
+						//Process when change lanuage successfully
                     },
                     error: function(){
                         alert('error');
