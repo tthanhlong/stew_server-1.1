@@ -13,6 +13,7 @@
         <title>JSP Page</title>
         <script type="text/javascript">
             $(document).ready(function(){
+				//This changes the local branch
                 window.location = "group/group.jsp";
             });
         </script>
