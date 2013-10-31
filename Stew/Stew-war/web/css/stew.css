@@ -1,0 +1,712 @@
+/* 
+    Document   : stew
+    Created on : Aug 28, 2013, 3:10:13 PM
+    Author     : tthanhlong
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    display: block;
+}
+.create_user_content tr td:first-child{
+    width: 20%;
+    text-align: center;
+}
+.create_user_content tr td:last-child{
+    padding-left: 15px;
+    text-align: left;
+}
+.create_content{
+    border: 1px solid gray;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.txt-area-description{
+    border-radius: 5px;
+    border: 2px solid gray;
+    width: 500px;
+    padding: 5px;
+}
+
+
+/* .manage_user{
+    float: right;
+    font-size: 14px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+}*/
+.paging ul{
+    float: right;
+    margin: 3px;
+}
+.paging{
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 30px;
+    margin: 0 auto 5px;
+    width: 95%;
+}
+
+.create_user{
+    float: right;
+    font-size: 14px;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.create_user:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+}
+.createUser{
+    padding: 5px;
+}
+.paging ul li {
+    float: left;
+    height: 24px;
+    margin-left: 4px;
+    overflow: hidden;
+    min-width: 24px;
+    width: auto;
+}
+.paging ul li a {
+    border: 1px solid SteelBlue;
+    border-radius: 5px 5px 5px 5px;
+    color: SteelBlue;
+    text-decoration: none;
+    min-width: 24px;
+    padding: 0px 2px;
+}
+.paging ul li a.current {
+    border: 1px solid SteelBlue;
+    border-radius: 5px 5px 5px 5px;
+    color: SteelBlue;
+    text-decoration: none;
+    min-width: 24px;
+    padding: 0px 2px;
+}
+.paging ul li a.disabled{
+    background-color: #DBDBDB;
+}
+.paging ul li * {
+    display: block;
+    font: bold 13px/22px Arial;
+    text-align: center;
+}
+.paging ul li a:hover:not(.current) {
+    background-color: #2081d5;
+    border: 1px solid SteelBlue;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+}
+#table_user tr:nth-child(odd){
+    background-color: #D0D8E8;
+}
+#table_user tr:nth-child(even){
+    background-color: #E9EDF4;
+}
+.action img{
+    border: 2px solid transparent !important
+}
+.action img:hover{
+    border: solid 2px #385D8A!important;
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: block;
+    background: #252528;
+    color: #777e83;
+}
+
+.list-group{
+    width: 250px;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+.list-group input{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.group-send{
+    margin-top: 7px
+}
+.save-btn, .back-btn{
+    background: url("../image/gui/btn_save.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.cancel-btn{
+    background: url("../image/gui/btn_cancel.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.delete-btn{
+    background: url("../image/gui/btn_delete.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin-left: 175px;
+}
+.add-to-group-btn{
+    background: url("../image/gui/btn_add_user.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.send-btn{
+    background: url("../image/gui/btn_send.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.action-btn{
+    color: white;
+    height: 30px;
+    width: 100%;
+    margin-left: 2px;
+    background: rgb(0, 153, 255);
+    border-radius: 5px;
+}
+
+/*input[type=button],input[disabled]:hover{
+    text-align: center;
+    background-color: #4F81BD;
+    padding:7px;
+    border-radius: 5px;
+    border: solid 2px #385D8A;
+    margin-right: 25px;
+    color: #ffffff;
+    min-width: 100px;
+    font-weight: bold;
+}*/
+.validate{
+    color: red;
+    font-weight: bold;
+}
+.yes-no-btn{
+    background: rgb(0, 153, 255);
+    color: white;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+}
+#user-validate{
+    margin-top: 10px;
+}
+
+.create-group{
+    text-decoration: none;
+    color: red;
+}
+.remove-out{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+.th-content{
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+}
+.th-description{
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 370px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+}
+.delete_comfirm{
+    width: 450px;
+    margin: auto;
+}
+.table_content thead th{
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.group_user_top_label{
+    width: 94%;
+    margin: auto;
+}
+.group_name{
+    background: none repeat scroll 0 0 #DDDDDD;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    padding: 7px;
+    width: 100%;
+}
+.lable_group_name{
+    font-size: 16px;
+}
+.td_lable{
+    background: #dddddd;
+    color: #000000;
+}
+
+p.required:after, label.required:after
+{
+    content:" (*)";
+    color:red;
+    font-size: 14px;
+}
+a img {
+    border: none !important;
+}
+.create_user_content tr td{
+    vertical-align: top;
+    font-size: 16px;
+    padding-top: 25px;
+}
+/**********************************************************************/
+/** Login form**/
+/**********************************************************************/
+.login_header{
+    background-color: #B76900;
+    color: #FFFFFF;
+    padding: 10px 3%;
+    text-align: right;
+    width: 94%;
+    font-weight: bold;
+}
+#login{
+    background: url("../image/gui/login_bg.png") repeat-x scroll 0 0 / contain #FFB400;
+    width: 100%;
+}
+.login_body{
+    width: 50%;
+    margin: auto;
+    min-width: 480px;
+}
+.login_logo{
+    background: url("../image/gui/login_img_logo.png") no-repeat scroll center center / contain rgba(0, 0, 0, 0);
+    height: 270px;
+    margin: 40px auto auto;
+    min-width: 410px;
+    width: 35%;
+}
+.Login_content{
+    background: url("../image/gui/login_img_box.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    color: #000000;
+    margin-left: 110px;
+    padding: 30px 168px 180px 20px;
+    width: 380px;
+}
+.Login_content table{
+    border-spacing: 10px;
+}
+.Login_content table td{
+    height: 50px;
+    min-width: 100px
+}
+.button_login{
+    background:#dfdfdf;
+    color: #000!important;
+}
+.button_login:hover{
+    background: #a0a0a0;
+}
+/**Logout**/
+.Login_content div{
+    padding: 20px 0px;
+    width: 100%;
+    text-align: center;
+}
+div.login_again:before{
+    content: url("../image/gui/logout_icon_login.png");
+    padding: 5px;
+}
+.Login_content div.login_again a{
+    text-decoration: underline;
+}
+div.log_out:before{
+    content: url("../image/gui/navi_icon_logout.png");
+    padding: 5px;
+}
+div.log_out{
+    width: 90%;
+    text-align: right;    
+}
+div.log_out a{
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+div.log_out a:hover{
+    color: blue !important;
+    text-decoration: underline;
+}
+/**********************************************************************/
+/** common* */
+/**********************************************************************/
+body{
+    background-color: #ededed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea {
+    resize: none !important;
+}
+input[type=text],input[type=password], select{
+    width: 230px;
+    border: 1px solid #ccc;
+    margin-left: 2px;
+    padding: 7px;    
+}
+input[type=button], input[type=submit]{
+    padding: 12px;
+    min-width: 200px;
+    color: #ffffff;
+    background-color: #dddddd;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+td.tbl_table{
+    font-weight: bold;
+    color: #000;
+}
+p.required:after, td.required:after
+{
+    content:" (*)";
+    color:red;
+}
+.page_content{
+    width: 92%;
+    margin: auto;
+    min-width: 800px;
+    background: #ffffff;
+}
+.content{
+    display: block;
+    min-height: 700px;
+    position: relative;
+    min-width: 1000px;
+}
+.content_header{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px 3% 20px;
+    width: 94%;
+}
+
+.search_div{
+    display: inline-block;
+    position: relative;
+    width: 300px !important;
+}
+.search-button{
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: #FFFFFF;
+    background-image: url("../image/gui/icon_search.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    min-width: 35px !important;
+    outline: medium none;
+    width: 35px !important;
+}
+/**********************************************************************/
+/**Create record**/
+/**********************************************************************/
+.create_user_content{
+    font-size: 16px;
+    width: 95%;
+    border-spacing: 1px;
+    height: 100%;
+    padding-bottom: 50px;
+}
+/**********************************************************************/
+/**List record**/
+/**********************************************************************/
+.user_list{
+    min-height: 450px;
+    width: 100%;
+}
+.table_content{
+    border-spacing: 1px;
+    width: 100%;
+    vertical-align: middle;
+    background: #fafafa;
+}
+
+.table_content thead {
+    background-color: #DDDDDD;
+    color: #000000;
+    height: 50px;
+}
+.table_content tbody{
+    line-height: 30px;
+}
+.table_content tfoot{
+    background-color: #DDDDDD;
+    height: 50px;
+}
+.table_content .table_list td:not(.check-icon-td){
+    border-bottom: 1px solid #eee;
+    padding: 7px 7px 7px 30px;
+}
+table.pleft30  td{
+    padding: 7px 7px 7px 30px;
+}
+span.create-icon{
+    background: url("../image/gui/icon_add.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin-left: 40px;
+    padding: 7px 0 7px 40px;
+}
+span.create-icon a{
+    text-decoration: none;
+    cursor: pointer;
+}
+span.gruop-icon{
+    background: url("../image/gui/icon_group.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    padding: 7px 0 7px 28px;
+}
+
+.td_name{
+    max-width: 200px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.td_des{
+    max-width: 350px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/**********************************************************************/
+/** header **/
+/**********************************************************************/
+.header-item {
+    background: url("../image/gui/navi_bg.png") repeat-x scroll 0 0 / contain rgba(0, 0, 0, 0);
+    width: 100%;
+    min-width: 1000px;
+}
+.header-item table{
+    width: 100%;    
+    border-spacing: 0;
+}
+.header-item *{
+    margin: 0;
+    padding: 0;
+}
+.header-item table td{
+    height: 110px !important;
+    min-width: 130px;
+}
+.nav_item a{
+    color: #FFFFFF;
+    display: block;
+    min-width: 120px;
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+td.nav_item{
+    background: url("../image/gui/nav_bg.png") repeat-x scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+}
+td.selected-menu, td.nav_item:hover{
+    background: url("../image/gui/select_btn_bg.png") repeat-x scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+}
+#logo_image{
+    background: #FF9200;
+    margin: 0;
+    padding: 0;
+    width: 0 !important;
+}
+#logo_image img{
+    height: 110px;
+    margin: 0;
+    padding: 0;
+}
+#header-item table tr{
+    height: 110px !important;
+    overflow-y: hidden;
+}
+span#groupName{
+    padding-left: 15px;
+}
+#user-menu a{
+    background: url("../image/gui/user_icon.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+}
+#group-menu a{
+    background: url("../image/gui/group_icon.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+}
+#message-menu a{
+    background: url("../image/gui/mess_icon.png") no-repeat scroll center 20% rgba(0, 0, 0, 0);
+}
+#app-menu a{
+    background: url("../image/gui/app_icon.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+}
+#sendMessage-menu a{
+    background: url("../image/gui/mess_icon.png") no-repeat scroll center 20% rgba(0, 0, 0, 0);
+}
+#log-menu a{
+    background: url("../image/gui/log_icon.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+}
+/**********************************************************************/
+/** Group filter and search**/
+/**********************************************************************/
+.filter_header{
+    color: #000000;
+    margin: 20px 0;
+    width: 100%;
+}
+table.filter_header .delete-icon-td{
+    text-align: left;
+    width: 50%;
+}
+
+span.delete-icon{
+    cursor: pointer;
+    background: url("../image/gui/icon_delete.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin-left: 40px;
+    padding: 7px 0 7px 40px;
+}
+/**********************************************************************/
+/** paging**/
+/**********************************************************************/
+#paging a,#paging span{
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    outline: medium none;
+    padding: 0 15px;
+}
+#paging{
+    padding:15px;
+}
+.page-first{
+    background: url("../image/gui/btn_prev2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.page-last{
+    background: url("../image/gui/next2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.page-prev{
+    background: url("../image/gui/btn_prev1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.page-next{
+    background: url("../image/gui/btn_next1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.group_name_box{
+    height: 80px;
+}
+.group_role_box{
+    height: 100px;
+}
+.group_description_box{
+    height: 200px;
+}
+.sub_icon{
+    width: 35px;
+    height: 35px;
+    background: url("../image/gui/icon_minus.png")no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.add_icon{
+    width: 35px;
+    height: 35px;
+    background: url("../image/gui/icon_plus.png")no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.group_description_box textarea{
+    width: 80%;
+    height: 120px;
+}
+.button_group{
+    margin: 20px 60px;
+}
+.button_group input{
+    margin-right: 20px;
+    color: white;
+}
+.btn_save{
+
+}
+.btn_cancel{
+
+}
+span.edit-icon{
+    cursor: pointer;
+    background: url("../image/gui/icon_edit.png") no-repeat scroll left center / 25px auto rgba(0, 0, 0, 0);
+    padding: 7px 0 7px 30px;
+}
+span.add-user{
+    background: url("../image/gui/icon_adduser.png") no-repeat scroll left center / 25px auto rgba(0, 0, 0, 0);
+    padding: 7px 0 7px 30px;
+}
+span.view-icon{
+    background: url("../image/gui/icon_view.png") no-repeat scroll left center / 25px auto rgba(0, 0, 0, 0);
+    padding: 7px 0 7px 30px;
+}
+/**********************************************************************/
+/**********************************************************************/
+/** User**/
+/**********************************************************************/
+
+span.minus-icon{
+    background: url("../image/gui/icon_minus.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding: 5px 0 7px 40px;
+}
+
+span.plus-icon{
+    background: url("../image/gui/icon_plus.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding: 5px 0 7px 40px;
+}
+
+.select-tr{
+    background-color: rgb(252, 241, 226);
+}
+
+.long-text{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    overflow: hidden;
+}
+.enable-btn{
+    background-color: #008df2;
+}
+.tr-header{
+    height: 60px;
+}
+/**********************************************************************/
+.hidden{
+    display: none;
+}
+.new-group-role select{
+    margin-right: 30px;
+}
+.img-search{
+    background: url("../image/gui/icon_search.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 35px;
+    height: 35px;
+    float: right;
+    cursor: pointer;
+}
+.download-btn{
+    margin-top: 20px;
+    background: url("../image/gui/btn_download.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.check-icon-td{
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.no_result{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
