@@ -22,7 +22,7 @@
                     dataType: "json",
                     success: function(data){
 						//Process when change lanuage successfully
-						//Change branch
+						//Change from branch_master
                     },
                     error: function(){
                         alert('error');
