@@ -14,6 +14,7 @@
         <script type="text/javascript">
             $(document).ready(function(){
 				//Delete comment from branch_master
+				//Edit from branch
                 window.location = "group/group.jsp";
             });
         </script>
