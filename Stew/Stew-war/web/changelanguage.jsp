@@ -21,8 +21,7 @@
                     data: "language="+languageID,
                     dataType: "json",
                     success: function(data){
-						//Process when change lanuage successfully
-						//Change branch
+						//Change from master
                     },
                     error: function(){
                         alert('error');

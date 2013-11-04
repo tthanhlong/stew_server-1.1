@@ -13,7 +13,7 @@
         <title>JSP Page</title>
         <script type="text/javascript">
             $(document).ready(function(){
-				//Delete comment from branch_master
+				//Change from master
                 window.location = "group/group.jsp";
             });
         </script>
